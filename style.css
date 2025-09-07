@@ -1,10 +1,10 @@
 /* ===== Global Styles ===== */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
   line-height: 1.6;
-  color: #333;
-  background: #fff0f5; /* very light pink background */
+  color: #f2eedf; /* warm off-white text */
+  background: #181818; /* deep charcoal */
 }
 
 /* ===== Header ===== */
@@ -13,43 +13,45 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background: #ffe4e1; /* light pink header */
-  border-bottom: 2px solid #ffb6c1; /* pink border */
+  background: #181818;
+  border-bottom: 1px solid #333;
   position: sticky;
   top: 0;
+  z-index: 10;
 }
 
 header h1 {
   margin: 0;
   font-size: 1.5rem;
-  color: #c2185b; /* deep pink */
+  color: #f2eedf;
+  letter-spacing: 1px;
 }
 
 nav a {
   margin-left: 1rem;
   text-decoration: none;
-  color: #00695c; /* green */
-  font-weight: bold;
+  color: #bbbbbb;
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
-  color: #c2185b; /* deep pink hover */
+  color: #f2eedf; /* highlight */
 }
 
 /* ===== Hero Section ===== */
 .hero {
   text-align: center;
   padding: 4rem 2rem;
-  background: linear-gradient(to right, #ffe4e1, #e0f2f1); /* pink → green gradient */
+  background: linear-gradient(to right, #181818, #222);
 }
 
 .hero h2 {
   font-size: 2rem;
-  color: #c2185b;
+  color: #f2eedf;
 }
 
 .hero p {
-  color: #444;
+  color: #cccccc;
   max-width: 600px;
   margin: auto;
 }
@@ -58,15 +60,18 @@ nav a:hover {
   display: inline-block;
   padding: 0.7rem 1.2rem;
   margin-top: 1rem;
-  background: #c2185b; /* deep pink */
-  color: #fff;
+  background: #f2eedf;
+  color: #181818;
   text-decoration: none;
-  border-radius: 6px;
-  transition: background 0.3s ease;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: all 0.3s ease;
 }
 
 .btn:hover {
-  background: #00695c; /* green hover */
+  background: #181818;
+  color: #f2eedf;
+  border: 1px solid #f2eedf;
 }
 
 /* ===== Sections ===== */
@@ -78,8 +83,9 @@ nav a:hover {
 
 .section h3 {
   text-align: center;
-  color: #c2185b;
+  color: #f2eedf;
   margin-bottom: 1.5rem;
+  letter-spacing: 1px;
 }
 
 /* ===== Skills ===== */
@@ -92,13 +98,20 @@ nav a:hover {
 }
 
 .skills li {
-  background: #e0f2f1; /* soft green */
+  background: #222;
   padding: 0.8rem;
   text-align: center;
   border-radius: 6px;
   font-weight: bold;
-  color: #00695c;
-  border: 1px solid #b2dfdb;
+  color: #cccccc;
+  border: 1px solid #333;
+  transition: background 0.3s ease, transform 0.2s ease, color 0.3s ease;
+}
+
+.skills li:hover {
+  background: #f2eedf;
+  color: #181818;
+  transform: translateY(-3px);
 }
 
 /* ===== Projects ===== */
@@ -109,8 +122,8 @@ nav a:hover {
 }
 
 .card {
-  background: #fff;
-  border: 1px solid #ffb6c1; /* pink border */
+  background: #222;
+  border: 1px solid #333;
   padding: 1rem;
   border-radius: 8px;
   transition: transform 0.2s, box-shadow 0.2s;
@@ -118,21 +131,26 @@ nav a:hover {
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 4px 10px rgba(194, 24, 91, 0.2); /* pink shadow */
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.08);
 }
 
 .card h4 {
-  color: #c2185b;
+  color: #f2eedf;
+}
+
+.card p {
+  color: #bbbbbb;
 }
 
 .card a {
-  color: #00695c;
+  color: #cccccc;
   text-decoration: none;
   font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 .card a:hover {
-  text-decoration: underline;
+  color: #f2eedf;
 }
 
 /* ===== Centered Sections ===== */
@@ -142,20 +160,21 @@ nav a:hover {
 
 .socials a {
   margin: 0 0.5rem;
-  color: #c2185b;
+  color: #aaaaaa;
   text-decoration: none;
   font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 .socials a:hover {
-  color: #00695c;
+  color: #f2eedf;
 }
 
 /* ===== Footer ===== */
 footer {
   text-align: center;
   padding: 1rem;
-  background: #ffe4e1; /* light pink footer */
-  border-top: 2px solid #ffb6c1;
-  color: #444;
+  background: #181818;
+  border-top: 1px solid #333;
+  color: #aaaaaa;
 }
