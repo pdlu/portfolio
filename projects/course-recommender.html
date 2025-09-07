@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UCSB Course Recommendation System</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header>
+    <h1>UCSB Course Recommendation System</h1>
+    <nav>
+      <a href="../index.html">← Back to Portfolio</a>
+    </nav>
+  </header>
+
+  <main class="section">
+    <h2>Overview</h2>
+    <p>
+      Developed a course recommendation system using UCSB’s course catalog and anonymized student enrollment data. 
+      The system suggests courses based on academic history, helping students explore relevant and challenging classes.
+    </p>
+
+    <h2>Tech Stack</h2>
+    <ul>
+      <li>Python (pandas, numpy)</li>
+      <li>R/RStudio</li>
+      <li>UCSB Academic Curriculumn v.3 API</li>
+    </ul>
+
+    
+    <h2>Demo & Code</h2>
+    <p>
+      <a href="https://github.com/pdlu/UCSB-Course-Recommendation-System" target="_blank" rel="noopener noreferrer">
+        GitHub Repository →
+      </a>
+    </p>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Phuc Lu. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
